@@ -1,0 +1,17 @@
+{
+  "apps": [
+    {
+      "name": "docker-web-app",
+      "script": "./app.js",
+      "merge_logs": true,
+      "watch": true,
+      "max_restarts": 20,
+      "instances": 2,
+      "max_memory_restart": "200M",
+      "env": {
+        "PORT": 9999,
+        "NODE_ENV": "dev"
+      }
+    }
+  ]
+}
